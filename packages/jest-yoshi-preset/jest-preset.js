@@ -12,7 +12,7 @@ module.exports = {
       {
         displayName: 'component',
         testEnvironment: 'jsdom',
-        testURL: 'http://localhost:5554',
+        testURL: 'http://localhost',
         testMatch: ['<rootDir>/src/**/*.spec.*'],
       },
       {
