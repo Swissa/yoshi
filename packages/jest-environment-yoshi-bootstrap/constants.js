@@ -3,7 +3,7 @@ const JEST_WORKER_ID = parseInt(process.env.JEST_WORKER_ID, 10);
 let COUNTER = 1;
 
 module.exports.getPort = () => {
-  return (JEST_WORKER_ID + 3) * 1000 + COUNTER++;
+  return 1000 + JEST_WORKER_ID * 300 + COUNTER++;
 };
 
 // module.exports.PORT = 3100 + JEST_WORKER_ID;
