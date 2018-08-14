@@ -4,7 +4,6 @@ process.on('exit', () => {
   }
 });
 
-const path = require('path');
 const fs = require('fs-extra');
 const stream = require('stream');
 const chalk = require('chalk');
@@ -12,7 +11,7 @@ const puppeteer = require('puppeteer');
 const child_process = require('child_process');
 const waitPort = require('wait-port');
 const { WS_ENDPOINT_PATH } = require('./constants');
-const { getProcessForPort } = require('./utils');
+const { getProcessForPort, loadConfig } = require('./utils');
 const { servers } = require('yoshi/config/project');
 
 const serverLogPrefixer = () => {
@@ -24,9 +23,7 @@ const serverLogPrefixer = () => {
   });
 };
 
-// const config = loadConfig();
-
-const config = require(path.join(process.cwd(), 'jest-yoshi.config.js'));
+const config = loadConfig();
 
 module.exports = async () => {
   // start with a few new lines

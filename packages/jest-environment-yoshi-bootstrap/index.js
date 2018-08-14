@@ -2,8 +2,9 @@ const path = require('path');
 const NodeEnvironment = require('jest-environment-node');
 const project = require('yoshi/config/project');
 const { getPort } = require('./constants');
+const { loadConfig } = require('./utils');
 
-const config = require(path.join(process.cwd(), 'jest-yoshi.config.js'));
+const config = loadConfig();
 
 module.exports = class BootstrapEnvironment extends NodeEnvironment {
   async setup() {

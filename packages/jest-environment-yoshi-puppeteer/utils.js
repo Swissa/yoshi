@@ -1,6 +1,7 @@
 const path = require('path');
 const fs = require('fs-extra');
 const { execSync } = require('child_process');
+const chalk = require('chalk');
 
 const execOptions = {
   encoding: 'utf8',
@@ -42,11 +43,15 @@ module.exports.loadConfig = () => {
 
   if (!fs.existsSync(configPath)) {
     throw new Error(
-      `Could't find config file at: '${configPath}', please create one.`,
+      `Could not find 'jest-yoshi.config.js' file, please create one at the root of your project.`,
     );
   }
 
-  const config = require(configPath);
-
-  return config;
+  try {
+    return require(configPath);
+  } catch (error) {
+    throw new Error(
+      `Config ${chalk.bold(configPath)} is invalid:\n  ${error.message}`,
+    );
+  }
 };

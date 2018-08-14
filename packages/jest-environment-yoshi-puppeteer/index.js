@@ -1,9 +1,9 @@
-const path = require('path');
 const fs = require('fs-extra');
 const puppeteer = require('puppeteer');
 const { WS_ENDPOINT_PATH } = require('./constants');
+const { loadConfig } = require('./utils');
 
-const config = require(path.join(process.cwd(), 'jest-yoshi.config.js'));
+const config = loadConfig();
 
 const ParentEnvironment = config.bootstrap
   ? require('jest-environment-yoshi-bootstrap')
