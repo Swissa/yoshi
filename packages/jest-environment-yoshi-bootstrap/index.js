@@ -1,7 +1,7 @@
 const NodeEnvironment = require('jest-environment-node');
 const project = require('yoshi/config/project');
 const { getPort } = require('./constants');
-const { loadConfig } = require('./utils');
+const { loadConfig } = require('yoshi/src/utils');
 
 const config = loadConfig();
 

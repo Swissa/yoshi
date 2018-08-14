@@ -1,7 +1,7 @@
 const fs = require('fs-extra');
 const puppeteer = require('puppeteer');
 const { WS_ENDPOINT_PATH } = require('./constants');
-const { loadConfig } = require('./utils');
+const { loadConfig } = require('yoshi/src/utils');
 
 const config = loadConfig();
 

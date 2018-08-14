@@ -3,6 +3,7 @@ const path = require('path');
 const glob = require('glob');
 const mkdirp = require('mkdirp');
 const chokidar = require('chokidar');
+const chalk = require('chalk');
 const childProcess = require('child_process');
 const detect = require('detect-port');
 const { mergeWith } = require('lodash/fp');
@@ -235,4 +236,22 @@ module.exports.toIdentifier = str => {
   return str
     .replace(IDENTIFIER_NAME_REPLACE_REGEX, '_$1')
     .replace(IDENTIFIER_ALPHA_NUMERIC_NAME_REPLACE_REGEX, '_');
+};
+
+module.exports.loadConfig = () => {
+  const configPath = path.join(process.cwd(), 'jest-yoshi.config.js');
+
+  if (!fs.existsSync(configPath)) {
+    throw new Error(
+      `Could not find 'jest-yoshi.config.js' file, please create one at the root of your project.`,
+    );
+  }
+
+  try {
+    return require(configPath);
+  } catch (error) {
+    throw new Error(
+      `Config ${chalk.bold(configPath)} is invalid:\n  ${error.message}`,
+    );
+  }
 };
