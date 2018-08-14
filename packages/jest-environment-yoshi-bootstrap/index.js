@@ -1,4 +1,3 @@
-const path = require('path');
 const NodeEnvironment = require('jest-environment-node');
 const project = require('yoshi/config/project');
 const { getPort } = require('./constants');
