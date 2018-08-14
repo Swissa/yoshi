@@ -4,6 +4,7 @@ const glob = require('glob');
 const mkdirp = require('mkdirp');
 const chokidar = require('chokidar');
 const chalk = require('chalk');
+const { validate } = require('jest-validate');
 const childProcess = require('child_process');
 const detect = require('detect-port');
 const { mergeWith } = require('lodash/fp');
@@ -247,11 +248,31 @@ module.exports.loadConfig = () => {
     );
   }
 
+  let config;
+
   try {
-    return require(configPath);
+    config = require(configPath);
   } catch (error) {
     throw new Error(
       `Config ${chalk.bold(configPath)} is invalid:\n  ${error.message}`,
     );
   }
+
+  validate(config, {
+    recursiveBlacklist: ['puppeteer'],
+    exampleConfig: {
+      bootstrap: {
+        setup: async () => {},
+        teardown: async () => {},
+      },
+      server: {
+        filename: 'path/to/some/file',
+        port: 1234,
+      },
+    },
+    comment:
+      'Please refer to https://github.com/wix/yoshi for more information...',
+  });
+
+  return config;
 };
