@@ -1,5 +1,5 @@
 const fs = require('fs');
-const path = require('path');
+const globby = require('globby');
 const { envs } = require('./constants');
 
 module.exports = {
@@ -13,17 +13,17 @@ module.exports = {
         displayName: 'component',
         testEnvironment: 'jsdom',
         testURL: 'http://localhost',
-        testMatch: ['<rootDir>/src/**/*.spec.*'],
+        testMatch: ['<rootDir>/src/**/*.spec.(ts|js){,x}'],
       },
       {
         displayName: 'server',
         testEnvironment: require.resolve('jest-environment-yoshi-bootstrap'),
-        testMatch: ['<rootDir>/test/it/**/*.spec.*'],
+        testMatch: ['<rootDir>/test/it/**/*.spec.(ts|js){,x}'],
       },
       {
         displayName: 'e2e',
         testEnvironment: require.resolve('jest-environment-yoshi-puppeteer'),
-        testMatch: ['<rootDir>/test/e2e/**/*.e2e.*'],
+        testMatch: ['<rootDir>/test/e2e/**/*.e2e.(ts|js){,x}'],
       },
     ]
       .filter(({ displayName }) => {
@@ -34,14 +34,14 @@ module.exports = {
         return true;
       })
       .map(project => {
-        const setupTestsPath = path.resolve(
-          process.cwd(),
-          `test/setup.${project.displayName}.ts`,
+        const [setupTestsPath] = globby.sync(
+          `test/setup.${project.displayName}.(ts|js){,x}`,
         );
 
-        const setupTestsFile = fs.existsSync(setupTestsPath)
-          ? `<rootDir>/test/setup.${project.displayName}.ts`
-          : undefined;
+        const setupTestsFile =
+          setupTestsPath && fs.existsSync(setupTestsPath)
+            ? `<rootDir>/${setupTestsPath}`
+            : undefined;
 
         return {
           ...project,
@@ -49,7 +49,7 @@ module.exports = {
           transformIgnorePatterns: ['/node_modules/(?!(.*?\\.st\\.css$))'],
 
           transform: {
-            '^.+\\.(js)$': require.resolve('babel-jest'),
+            '^.+\\.jsx?$': require.resolve('babel-jest'),
             '^.+\\.tsx?$': require.resolve('ts-jest'),
             '\\.st.css?$': require.resolve('./transforms/stylable'),
           },
