@@ -18,12 +18,12 @@ module.exports = {
       {
         displayName: 'server',
         testEnvironment: require.resolve('jest-environment-yoshi-bootstrap'),
-        testMatch: ['<rootDir>/test/it/**/*.spec.(ts|js){,x}'],
+        testMatch: ['<rootDir>/test/server/**/*.spec.(ts|js){,x}'],
       },
       {
         displayName: 'e2e',
         testEnvironment: require.resolve('jest-environment-yoshi-puppeteer'),
-        testMatch: ['<rootDir>/test/e2e/**/*.e2e.(ts|js){,x}'],
+        testMatch: ['<rootDir>/test/e2e/**/*.spec.(ts|js){,x}'],
       },
     ]
       .filter(({ displayName }) => {
