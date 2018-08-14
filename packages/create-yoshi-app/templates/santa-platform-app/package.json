@@ -1,0 +1,55 @@
+{
+  "name": "{%projectName%}",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "{%authorName%}",
+    "email": "{%authorEmail%}"
+  },
+  "scripts": {
+    "start": "yoshi start",
+    "precommit": "yoshi lint",
+    "pretest": "yoshi build",
+    "test": "yoshi test",
+    "posttest": "yoshi lint",
+    "release": "yoshi release && npm shrinkwrap"
+  },
+  "devDependencies": {
+    "chai": "~4.1.0",
+    "yoshi": "^3.0.0",
+    "platform-editor-sdk": "0.0.258"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "regenerator-runtime": "^0.11.0"
+  },
+  "yoshi": {
+    "externals": {
+      "react": "React",
+      "react-dom": "ReactDOM"
+    },
+    "entry": {
+      "editor": "editor",
+      "viewer": "viewer",
+      "settings": "settings"
+    },
+    "servers": {
+      "cdn": {
+        "ssl": true
+      }
+    },
+    "hmr": false,
+    "liveReload": false,
+    "exports": "{%projectName%}"
+  },
+  "babel": {
+    "presets": [
+      "yoshi"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "yoshi"
+  }
+}
