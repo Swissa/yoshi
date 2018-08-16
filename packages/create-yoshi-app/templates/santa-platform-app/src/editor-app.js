@@ -1,5 +1,3 @@
-import 'regenerator-runtime/runtime';
-
 export default class EditorApp {
   init(editorSDK, appDefinitionId) {
     this.editorSDK = editorSDK;
