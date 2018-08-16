@@ -1,4 +1,4 @@
-# Welcome to <%= name %>!
+# Welcome to {%projectName%}!
 
 This repo shows quick & easy way to get started writing apps using Santa platform. Santa platform is new and powerful way to implement business logic in Editor & Viewer using native components.
 
