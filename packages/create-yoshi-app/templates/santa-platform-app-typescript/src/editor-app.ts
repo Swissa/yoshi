@@ -1,5 +1,5 @@
 import { EditorPlatformApp } from 'platform-editor-sdk/js/editor-app';
-import { PlatformEvent } from 'platform-editor-sdk/js/api/events/eventinterfaces';
+import { PlatformEvent } from 'platform-editor-sdk/js/api/events/eventInterfaces';
 import AppManifest from 'platform-editor-sdk/js/manifest';
 
 export default class EditorApp implements EditorPlatformApp {
