@@ -4085,6 +4085,950 @@ describe('Counter', () => {
 }
 `;
 
+exports[`santa-platform-app 1`] = `
+Object {
+  ".DS_Store": "   Bud1           
+                                                           a g e . j s                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           p a c k a g e . j s o nIlocblob        (������      p o m . x m lIlocblob     �   (������     	 R E A D M E . m dIlocblob     �   (������      s r cIlocblob      ;   �������      s r cbwspblob   �bplist00�			
+	]ShowStatusBar[ShowPathbar[ShowToolbar[ShowTabView_ContainerShowSidebar\\\\WindowBounds[ShowSidebar			_{{895, 591}, {770, 436}}	%1=I\`myz{|}~�                            �    s r cvSrnlong       t e s tIlocblob     �   �������     
+ { % g i t i g n o r e % }Ilocblob      ;   (������                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @      �                                        @      �                                          @      �                                          @                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   E  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       DSDB                                 \`          �                                         @      �                                          @      �                                          @                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ",
+  ".gitignore": "node_modules
+dist
+target
+coverage
+typings
+maven
+test/e2e/screenshots
+package-lock.json
+*npm-debug.log
+.history
+.idea
+*.iml
+.yo-rc.json
+",
+  ".nvmrc": "8.9.1
+",
+  "README.md": "# test-santa-platform-app
+
+## Installation
+**Detailed explanations are available [here](https://github.com/wix-private/business-manager/blob/master/docs/step-by-step.md#integrate-your-app-into-business-manager)**
+\`\`\`shell
+npm install
+npm start
+Open http://localhost:5000/business-manager/3fdba72b-c9e7-4529-9219-807ad4b36d91/test-santa-platform-app
+\`\`\`
+- If needed update your **[json.erb file](templates/module_test-santa-platform-app.json.erb)**
+- If needed update [module, page component and lazy component ids](src/config.js)
+- GA your project
+- PR your module config file to business manager as explained [here](https://github.com/wix-private/business-manager/blob/master/docs/module-config-file.md#file-name-and-location)
+- Wait for business manager GA
+- See it in production
+",
+  "package.json": "{
+  \\"name\\": \\"test-santa-platform-app\\",
+  \\"version\\": \\"1.0.0\\",
+  \\"license\\": \\"UNLICENSED\\",
+  \\"private\\": true,
+  \\"author\\": {
+    \\"name\\": \\"rany\\",
+    \\"email\\": \\"rany@wix.com\\"
+  },
+  \\"scripts\\": {
+    \\"start\\": \\"yoshi start\\",
+    \\"precommit\\": \\"yoshi lint\\",
+    \\"pretest\\": \\"yoshi build\\",
+    \\"test\\": \\"yoshi test\\",
+    \\"posttest\\": \\"yoshi lint\\",
+    \\"release\\": \\"yoshi release && npm shrinkwrap\\"
+  },
+  \\"devDependencies\\": {
+    \\"chai\\": \\"~4.1.0\\",
+    \\"yoshi\\": \\"^3.0.0\\",
+    \\"platform-editor-sdk\\": \\"0.0.258\\"
+  },
+  \\"dependencies\\": {
+    \\"react\\": \\"^16.0.0\\",
+    \\"react-dom\\": \\"^16.0.0\\",
+    \\"regenerator-runtime\\": \\"^0.11.0\\"
+  },
+  \\"yoshi\\": {
+    \\"externals\\": {
+      \\"react\\": \\"React\\",
+      \\"react-dom\\": \\"ReactDOM\\"
+    },
+    \\"entry\\": {
+      \\"editor\\": \\"editor\\",
+      \\"viewer\\": \\"viewer\\",
+      \\"settings\\": \\"settings\\"
+    },
+    \\"servers\\": {
+      \\"cdn\\": {
+        \\"ssl\\": true
+      }
+    },
+    \\"hmr\\": false,
+    \\"liveReload\\": false,
+    \\"exports\\": \\"test-santa-platform-app\\"
+  },
+  \\"babel\\": {
+    \\"presets\\": [
+      \\"yoshi\\"
+    ]
+  },
+  \\"eslintConfig\\": {
+    \\"extends\\": \\"yoshi\\"
+  }
+}
+",
+  "pom.xml": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<project xmlns=\\"http://maven.apache.org/POM/4.0.0\\" xmlns:xsi=\\"http://www.w3.org/2001/XMLSchema-instance\\" xsi:schemaLocation=\\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\\">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.wixpress</groupId>
+    <artifactId>test-santa-platform-app</artifactId>
+    <packaging>pom</packaging>
+    <name>test-santa-platform-app</name>
+    <description>test-santa-platform-app</description>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <organization>
+        <name></name>
+    </organization>
+
+    <parent>
+        <groupId>com.wixpress.common</groupId>
+        <artifactId>wix-master-parent</artifactId>
+        <version>100.0.0-SNAPSHOT</version>
+    </parent>
+
+    <developers>
+        <developer>
+            <name>rany</name>
+            <email>rany@wix.com</email>
+            <roles>
+                <role>owner</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2.1</version>
+                <configuration>
+                    <descriptors>
+                        <descriptor>maven/assembly/tar.gz.xml</descriptor>
+                    </descriptors>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <finalName>\${project.artifactId}-\${project.version}</finalName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+",
+  "src/.DS_Store": "   Bud1           	                                                           o r - a p p                                                                                                                                                                                                                                                                                                                                                                                                                                          
+ e d i t o r - a p p . j sIlocblob      ;   (������     	 e d i t o r . j sIlocblob      �   (������     
+ s e t t i n g s . h t m lIlocblob        (������      s e t t i n g s . j sIlocblob     �   (������     	 t e s t 1 2 . j sIlocblob      ;   �������     	 v i e w e r . j sIlocblob     �   (������                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @      �                                        @      �                                          @      �                                          @                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   E  	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       DSDB                                 \`          �                                         @      �                                          @      �                                          @                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ",
+  "src/editor-app.js": "import 'regenerator-runtime/runtime';
+
+export default class EditorApp {
+  init(editorSDK, appDefinitionId) {
+    this.editorSDK = editorSDK;
+    this.appDefinitionId = appDefinitionId;
+  }
+
+  async controllerAlreadyExists(controllerType) {
+    const controllers = await this.editorSDK.controllers.listAllControllers(
+      this.appDefinitionId,
+    );
+    for (const controller of controllers) {
+      const data = await this.editorSDK.controllers.getData(
+        this.appDefinitionId,
+        controller,
+      );
+      if (data.controllerType === controllerType) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  editorReady = async (editorSDK, appDefinitionId, { firstInstall }) => {
+    this.init(editorSDK, appDefinitionId);
+
+    if (firstInstall || !(await this.controllerAlreadyExists('myFirstApp'))) {
+      // Creating missing controller
+      const applicationId = await editorSDK.info.getAppDefinitionId(
+        appDefinitionId,
+      );
+      const pageRef = await editorSDK.pages.getCurrent(appDefinitionId);
+      await editorSDK.components.add(appDefinitionId, {
+        componentDefinition: {
+          componentType: 'platform.components.AppController',
+          data: {
+            type: 'AppController',
+            controllerType: 'myFirstApp',
+            applicationId,
+            settings: JSON.stringify({}),
+          },
+        },
+        pageRef,
+      });
+    }
+  };
+
+  onEvent = async ({ eventType, eventPayload }) => {
+    const { controllerRef } = eventPayload;
+    if (eventType === 'controllerSettingsButtonClicked') {
+      const options = {
+        title: 'Manage My First Application',
+        url: './settings.html',
+        initialData: {
+          controllerRef,
+        },
+        width: '80%',
+        height: '80%',
+      };
+      await this.editorSDK.editor.openComponentPanel(this.appDefinitionId, {
+        ...options,
+        componentRef: controllerRef,
+      });
+    }
+  };
+
+  getAppManifest = () => {
+    return Promise.resolve({
+      controllersStageData: {
+        myFirstApp: {
+          default: {
+            mainAction: {
+              label: 'Manage My First App',
+            },
+          },
+        },
+      },
+      exports: {
+        myFirstApp: {
+          tagname: 'myFirstApp',
+          widgetDisplayName: '',
+          eventHandlers: {},
+          synthetic: false,
+          inherits: {},
+          members: {
+            randomize: {
+              description: 'Randomize image sources',
+              kind: 'function',
+            },
+          },
+        },
+      },
+    });
+  };
+}
+",
+  "src/editor.js": "import EditorApp from './editor-app';
+
+module.exports = new EditorApp();
+",
+  "src/settings.html": "<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=\\"utf-8\\" />
+  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\">
+  <title>Page Title</title>
+  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">
+</head>
+
+<body>
+  <div id=\\"root\\"></div>
+  <script src=\\"//static.parastorage.com/services/js-platform-editor-sdk/1.125.0/lib/editorSDK.min.js\\"></script>
+  <script crossorigin src=\\"//static.parastorage.com/unpkg/react@16.4.1/umd/react.production.min.js\\"></script>
+  <script crossorigin src=\\"//static.parastorage.com/unpkg/react-dom@16.4.1/umd/react-dom.production.min.js\\"></script>
+  <script src=\\"./settings.bundle.js\\"></script>
+</body>
+
+</html>
+",
+  "src/settings.js": "import 'regenerator-runtime/runtime';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const ROLE_BUTTON = 'button';
+const ROLE_IMAGE = 'image';
+
+class App extends React.Component {
+  render() {
+    const { toggle } = this.props;
+    return (
+      <div>
+        <button onClick={() => toggle(true)}>Enable</button>
+        <br />
+        <button onClick={() => toggle(false)}>Disable</button>
+      </div>
+    );
+  }
+}
+
+const enableApp = async ({ token, editorSDK, controllerRef }) => {
+  const components = await editorSDK.components.getAllComponents(token);
+  const buttons = [];
+  const images = [];
+
+  for (const componentRef of components) {
+    const type = await editorSDK.components.getType(token, { componentRef });
+    if (type === 'wysiwyg.viewer.components.SiteButton') {
+      buttons.push(componentRef);
+    }
+    if (type === 'wysiwyg.viewer.components.WPhoto') {
+      images.push(componentRef);
+    }
+  }
+
+  buttons.map(componentRef =>
+    editorSDK.controllers.connect(
+      token,
+      {
+        controllerRef,
+        connectToRef: componentRef,
+        role: ROLE_BUTTON,
+      },
+    ),
+  );
+
+  images.map(componentRef =>
+    editorSDK.controllers.connect(
+      token,
+      {
+        controllerRef,
+        connectToRef: componentRef,
+        role: ROLE_IMAGE,
+      },
+    ),
+  );
+};
+
+const disableApp = async ({ token, editorSDK, controllerRef }) => {
+  const connectedComponents = await editorSDK.controllers.listConnectedComponents(
+    token,
+    { controllerRef },
+  );
+  connectedComponents.map(componentRef =>
+    editorSDK.controllers.disconnect(token, {
+      controllerRef,
+      connectToRef: componentRef,
+      role: null,
+    }),
+  );
+};
+
+const registerStartConfiguration = () => {
+  const { editorSDK } = (window => window)(window);
+
+  editorSDK.panel.onEvent(async ({ eventType, eventPayload }) => {
+    if (eventType === 'startConfiguration') {
+      const {
+        token,
+        initialData: { controllerRef },
+      } = eventPayload;
+
+      const toggle = val =>
+        val
+          ? enableApp({ token, editorSDK, controllerRef })
+          : disableApp({ token, editorSDK, controllerRef });
+
+      ReactDOM.render(<App toggle={toggle} />, document.getElementById('root'));
+    }
+  });
+};
+
+registerStartConfiguration();
+",
+  "src/viewer.js": "const generateRandomImageUrl = () => {
+  const size = Math.floor(Math.random() * 500);
+  return \`https://placecage.com/\${size}/\${size}\`;
+};
+
+const randomizeImageSources = $w => {
+  const images = $w('@image');
+  images.forEach(image => {
+    image.src = generateRandomImageUrl();
+  });
+};
+
+const createControllers = controllerConfigs =>
+  controllerConfigs.map(({ $w }) => ({
+    pageReady: () => {
+      const buttons = $w('@button');
+      for (const button of buttons) {
+        button.onClick(() => randomizeImageSources($w));
+      }
+    },
+    exports: {
+      randomize: () => randomizeImageSources($w),
+    },
+  }));
+
+module.exports = {
+  createControllers,
+  exports: {},
+};
+",
+  "test/test.spec.js": "import { expect } from 'chai';
+
+describe('santa platform app', () => {
+  it('true to be true', () => {
+    expect(true).to.be.true;
+  });
+});
+",
+}
+`;
+
+exports[`santa-platform-app-typescript 1`] = `
+Object {
+  ".gitignore": "node_modules
+dist
+target
+coverage
+typings
+maven
+test/e2e/screenshots
+package-lock.json
+*npm-debug.log
+.history
+.idea
+*.iml
+.yo-rc.json
+",
+  ".nvmrc": "8.9.1
+",
+  "README.md": "# Welcome to <%= name %>!
+
+This repo shows quick & easy way to get started writing apps using Santa platform. Santa platform is new and powerful way to implement business logic in Editor & Viewer using native components.
+
+# Installation
+\`\`\`
+npm i
+npm run start
+\`\`\`
+
+To see that you are up and running, go to https://localhost:3200/editor.bundle.min.js
+
+# App registration in Dev center
+
+To see the app running in production, you need to register it in Dev center.
+Visit https://dev.wix.com, click Start > Check Out Our Platform. Give a name for the app and click Register.
+
+Note the App ID field, you will need it's value in a bit.
+
+Scroll down to Wix Internal Fields section (you probably dont see it so read **Caveat no. 1** below) and add definition for your santa  platform app:
+
+\`\`\`
+{
+    \\"platform\\": {
+        \\"editorScriptUrl\\": \\"https:\\\\/\\\\/localhost:3200\\\\/editor.bundle.min.js\\",
+        \\"viewerScriptUrl\\": \\"https:\\\\/\\\\/localhost:3200\\\\/viewer.bundle.min.js\\"
+    }
+}
+\`\`\`
+
+Make sure the text you entered in there is valid JSON. [Here is the schema of  santa platform app](https://github.com/wix-a/app-market-schemas/blob/master/src/main/schemas/platformApp.json) if you need additional options.
+
+Hit Save and continue to persist your config. All done!
+
+Note: no need to proceed the app registration beyond this point (don't submit the app)
+
+### Caveat no. 1
+
+Chances are that you don't see this Wix Internal Fields section:
+
+![Internal fields](docs/images/dev-center-internal-fields.png)
+
+In that case, go to #dev-center and ask for permission to access it.
+
+### Caveat no. 2
+
+Chances are that you cannot save the config because button is disabled. Just add a dummy widget and complain in #dev-center while you're at it.
+
+![Dummy](docs/images/dummy.png)
+
+# Seeing it in action
+
+Create a Site from a blank template, enable Developer Tools and save it.
+
+![Developer Tools](docs/images/dev-tools-code.png)
+
+Go to preview. Open up console and select preview frame.
+
+![Preview frame](docs/images/preview.png)
+
+Make sure that app is up and running locally on the port you saved in Dev center. Paste in the following code in console:
+
+\`\`\`
+documentServices.platform.provision('your-app-id')
+\`\`\`
+
+Exit preview mode. Lo and behold, a controller is added to current page!
+
+![Controller](docs/images/controller.png)
+
+To see that your  santa platform app is working, add a Button and an Image to the same page.
+
+![Some components](docs/images/components.png)
+
+Next, select the controller and open app's settings by clicking 'Manage My First App'. A modal will open. Click Enable and close the modal. Go to preview and click the button to see the magic.
+
+At this point you might think - well, that is one useless app. And it is! But it does show the potential of the platform and things you can do with it.
+
+# Under the hood
+
+So what really did happen here? The example app has created connections between controller, button and image. When you went to preview, app's viewer module queried these connections and attached \`onClick\` listeners to each of the connected buttons. When you clicked the button, these handlers were executed by querying all connected images and randomizing their sources.
+
+To make any use of the platform, you'll need to understand three main components of a  santa platform app:
+
+1. Editor app module
+2. Settings panel
+3. Viewer app module
+
+### Editor app module
+
+It is a piece of code that is loaded by platform and runs inside a Web Worker. In this example app, we used Editor app to add the controller to stage. Also, when you clicked \\"Manage My First App\\", platform raised an event of type \`controllerSettingsButtonClicked\`. Editor app handled this event by opening Settings panel.
+
+### Settings panel
+
+The sad-looking modal is an iframe that you tell Editor to open. You can put whatever you want into the modal. It has access to platform SDK which allows you to add new components to page, create connections, persist your app configuration and much more.
+
+### Viewer app module
+
+This is code is also loaded by platform and runs inside a Web Worker. It adds behaviours to connected components when site is running (either Live site or in Preview mode).
+
+### Controller
+
+A controller is a special type of component. This controller can be connected to other components. You can query all connections to your controller and add behaviours to connected components.
+
+In this app, a controller is created when editor app module runs. In a real world scenario, your controller would be created by Editor when users selects your app from Add Panel.
+
+# Where to go from here
+
+Take a look at the app [lifecycle](https://docs.google.com/document/d/1FLMReU9nRmoVXII-H1uSHzMhH6fCMHkEzPyJBGKwnsg/edit) to understand the interface and available APIs.
+
+If you need further assistance, ask for help in \`#editor-platform-dev\`
+",
+  "package.json": "{
+  \\"name\\": \\"test-santa-platform-app-typescript\\",
+  \\"version\\": \\"1.0.0\\",
+  \\"license\\": \\"UNLICENSED\\",
+  \\"private\\": true,
+  \\"author\\": {
+    \\"name\\": \\"rany\\",
+    \\"email\\": \\"rany@wix.com\\"
+  },
+  \\"scripts\\": {
+    \\"start\\": \\"yoshi start\\",
+    \\"precommit\\": \\"yoshi lint\\",
+    \\"pretest\\": \\"yoshi build\\",
+    \\"test\\": \\"yoshi test\\",
+    \\"posttest\\": \\"yoshi lint\\",
+    \\"release\\": \\"yoshi release && npm shrinkwrap\\"
+  },
+  \\"devDependencies\\": {
+    \\"chai\\": \\"~4.1.0\\",
+    \\"yoshi\\": \\"^3.0.0\\",
+    \\"typescript\\": \\"~2.9.0\\",
+    \\"@types/chai\\": \\"~4.0.0\\",
+    \\"@types/mocha\\": \\"~2.2.0\\",
+    \\"@types/react\\": \\"^16.0.0\\",
+    \\"@types/react-dom\\": \\"^16.0.0\\",
+    \\"platform-editor-sdk\\": \\"0.0.258\\"
+  },
+  \\"dependencies\\": {
+    \\"react\\": \\"^16.0.0\\",
+    \\"react-dom\\": \\"^16.0.0\\"
+  },
+  \\"yoshi\\": {
+    \\"externals\\": {
+      \\"react\\": \\"React\\",
+      \\"react-dom\\": \\"ReactDOM\\"
+    },
+    \\"entry\\": {
+      \\"editor\\": \\"editor\\",
+      \\"viewer\\": \\"viewer\\",
+      \\"settings\\": \\"settings\\"
+    },
+    \\"servers\\": {
+      \\"cdn\\": {
+        \\"ssl\\": true
+      }
+    }
+  },
+  \\"hmr\\": false,
+  \\"liveReload\\": false,
+  \\"exports\\": \\"test-santa-platform-app-typescript\\"
+}
+",
+  "pom.xml": "<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<project xmlns=\\"http://maven.apache.org/POM/4.0.0\\" xmlns:xsi=\\"http://www.w3.org/2001/XMLSchema-instance\\" xsi:schemaLocation=\\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\\">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.wixpress</groupId>
+    <artifactId>test-santa-platform-app-typescript</artifactId>
+    <packaging>pom</packaging>
+    <name>test-santa-platform-app-typescript</name>
+    <description>test-santa-platform-app-typescript</description>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <organization>
+        <name></name>
+    </organization>
+
+    <parent>
+        <groupId>com.wixpress.common</groupId>
+        <artifactId>wix-master-parent</artifactId>
+        <version>100.0.0-SNAPSHOT</version>
+    </parent>
+
+    <developers>
+        <developer>
+            <name>rany</name>
+            <email>rany@wix.com</email>
+            <roles>
+                <role>owner</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.2.1</version>
+                <configuration>
+                    <descriptors>
+                        <descriptor>maven/assembly/tar.gz.xml</descriptor>
+                    </descriptors>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <finalName>\${project.artifactId}-\${project.version}</finalName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+",
+  "src/editor-app.ts": "import { EditorPlatformApp } from 'platform-editor-sdk/js/editor-app';
+import { PlatformEvent } from 'platform-editor-sdk/js/api/events/eventInterfaces';
+import AppManifest from 'platform-editor-sdk/js/manifest';
+
+export default class EditorApp implements EditorPlatformApp {
+  editorSDK: any;
+  appDefinitionId: string;
+
+  init(editorSDK: any, appDefinitionId: string) {
+    this.editorSDK = editorSDK;
+    this.appDefinitionId = appDefinitionId;
+  }
+
+  async controllerAlreadyExists(controllerType: string) {
+    const controllers = await this.editorSDK.controllers.listAllControllers(
+      this.appDefinitionId,
+    );
+    for (const controller of controllers) {
+      const data = await this.editorSDK.controllers.getData(
+        this.appDefinitionId,
+        controller,
+      );
+      if (data.controllerType === controllerType) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  editorReady = async (
+    editorSDK: any,
+    appDefinitionId: string,
+    { firstInstall }: { firstInstall: boolean },
+  ) => {
+    this.init(editorSDK, appDefinitionId);
+
+    if (firstInstall || !(await this.controllerAlreadyExists('myFirstApp'))) {
+      // Creating missing controller
+      const applicationId = await editorSDK.info.getAppDefinitionId(
+        appDefinitionId,
+      );
+      const pageRef = await editorSDK.pages.getCurrent(appDefinitionId);
+      await editorSDK.components.add(appDefinitionId, {
+        componentDefinition: {
+          componentType: 'platform.components.AppController',
+          data: {
+            type: 'AppController',
+            controllerType: 'myFirstApp',
+            applicationId,
+            settings: JSON.stringify({}),
+          },
+        },
+        pageRef,
+      });
+    }
+  };
+
+  onEvent = async ({ eventType, eventPayload }: PlatformEvent) => {
+    const { controllerRef } = eventPayload;
+    if (eventType === 'controllerSettingsButtonClicked') {
+      const options = {
+        title: 'Manage My First Application',
+        url: './settings.html',
+        initialData: {
+          controllerRef,
+        },
+        width: '80%',
+        height: '80%',
+      };
+      await this.editorSDK.editor.openComponentPanel(this.appDefinitionId, {
+        ...options,
+        componentRef: controllerRef,
+      });
+    }
+  };
+
+  getAppManifest = (): Promise<AppManifest> => {
+    return Promise.resolve({
+      controllersStageData: {
+        myFirstApp: {
+          default: {
+            mainAction: {
+              label: 'Manage My First App',
+            },
+          },
+        },
+      },
+      exports: {
+        myFirstApp: {
+          tagname: 'myFirstApp',
+          widgetDisplayName: '',
+          eventHandlers: {},
+          synthetic: false,
+          inherits: {},
+          members: {
+            randomize: {
+              description: 'Randomize image sources',
+              kind: 'function',
+            },
+          },
+        },
+      },
+    });
+  };
+}
+",
+  "src/editor.ts": "import EditorApp from './editor-app';
+
+module.exports = new EditorApp();
+",
+  "src/settings.html": "<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=\\"utf-8\\" />
+  <meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=edge\\">
+  <title>Page Title</title>
+  <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">
+</head>
+
+<body>
+  <div id=\\"root\\"></div>
+  <script src=\\"//static.parastorage.com/services/js-platform-editor-sdk/1.125.0/lib/editorSDK.min.js\\"></script>
+  <script crossorigin src=\\"//static.parastorage.com/unpkg/react@16.4.1/umd/react.production.min.js\\"></script>
+  <script crossorigin src=\\"//static.parastorage.com/unpkg/react-dom@16.4.1/umd/react-dom.production.min.js\\"></script>
+  <script src=\\"./settings.bundle.js\\"></script>
+</body>
+
+</html>
+",
+  "src/settings.tsx": "import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+const ROLE_BUTTON = 'button';
+const ROLE_IMAGE = 'image';
+
+interface PropsType {
+  toggle: Function;
+}
+
+class App extends React.Component<PropsType> {
+  render() {
+    const { toggle } = this.props;
+    return (
+      <div>
+        <button onClick={() => toggle(true)}>Enable</button>
+        <br />
+        <button onClick={() => toggle(false)}>Disable</button>
+      </div>
+    );
+  }
+}
+
+const enableApp = async ({ token, editorSDK, controllerRef }) => {
+  const components = await editorSDK.components.getAllComponents(token);
+  const buttons = [];
+  const images = [];
+
+  for (const componentRef of components) {
+    const type = await editorSDK.components.getType(token, { componentRef });
+    if (type === 'wysiwyg.viewer.components.SiteButton') {
+      buttons.push(componentRef);
+    }
+    if (type === 'wysiwyg.viewer.components.WPhoto') {
+      images.push(componentRef);
+    }
+  }
+
+  buttons.map(componentRef =>
+    editorSDK.controllers.connect(
+      token,
+      {
+        controllerRef,
+        connectToRef: componentRef,
+        role: ROLE_BUTTON,
+      },
+    ),
+  );
+
+  images.map(componentRef =>
+    editorSDK.controllers.connect(
+      token,
+      {
+        controllerRef,
+        connectToRef: componentRef,
+        role: ROLE_IMAGE,
+      },
+    ),
+  );
+};
+
+const disableApp = async ({ token, editorSDK, controllerRef }) => {
+  const connectedComponents = await editorSDK.controllers.listConnectedComponents(
+    token,
+    { controllerRef },
+  );
+  connectedComponents.map(componentRef =>
+    editorSDK.controllers.disconnect(token, {
+      controllerRef,
+      connectToRef: componentRef,
+      role: null,
+    }),
+  );
+};
+
+const registerStartConfiguration = () => {
+  const { editorSDK } = ((window: any) => window)(window);
+
+  editorSDK.panel.onEvent(async ({ eventType, eventPayload }) => {
+    if (eventType === 'startConfiguration') {
+      const {
+        token,
+        initialData: { controllerRef },
+      } = eventPayload;
+
+      const toggle = val =>
+        val
+          ? enableApp({ token, editorSDK, controllerRef })
+          : disableApp({ token, editorSDK, controllerRef });
+
+      ReactDOM.render(<App toggle={toggle} />, document.getElementById('root'));
+    }
+  });
+};
+
+registerStartConfiguration();
+",
+  "src/viewer.ts": "const generateRandomImageUrl = () => {
+  const size = Math.floor(Math.random() * 500);
+  return \`https://placecage.com/\${size}/\${size}\`;
+};
+
+const randomizeImageSources = $w => {
+  const images = $w('@image');
+  images.forEach(image => {
+    image.src = generateRandomImageUrl();
+  });
+};
+
+const createControllers = controllerConfigs =>
+  controllerConfigs.map(({ $w }) => ({
+    pageReady: () => {
+      const buttons = $w('@button');
+      for (const button of buttons) {
+        button.onClick(() => randomizeImageSources($w));
+      }
+    },
+    exports: {
+      randomize: () => randomizeImageSources($w),
+    },
+  }));
+
+module.exports = {
+  createControllers,
+  exports: {},
+};
+",
+  "test/test.spec.ts": "import { expect } from 'chai';
+
+describe('santa platform app', () => {
+  it('true to be true', () => {
+    expect(true).to.be.true;
+  });
+});
+",
+  "tsconfig.json": "{
+  \\"compilerOptions\\": {
+    \\"declaration\\": true,
+    \\"allowSyntheticDefaultImports\\": true,
+    \\"outDir\\": \\"./dist/\\",
+    \\"sourceMap\\": true,
+    \\"noImplicitAny\\": false,
+    \\"module\\": \\"commonjs\\",
+    \\"moduleResolution\\": \\"node\\",
+    \\"importHelpers\\": true,
+    \\"target\\": \\"es5\\",
+    \\"jsx\\": \\"react\\",
+    \\"lib\\": [\\"dom\\", \\"es2016\\"]
+  },
+  \\"include\\": [
+    \\"./test/**/*.ts\\"
+  ],
+  \\"files\\": [
+    \\"./src/settings.tsx\\",
+    \\"./src/editor.ts\\",
+    \\"./src/viewer.ts\\"
+  ]
+}
+",
+  "tslint.json": "{
+  \\"extends\\": \\"tslint-config-yoshi\\"
+}
+",
+}
+`;
+
 exports[`server 1`] = `
 Object {
   ".dockerignore": "node_modules
