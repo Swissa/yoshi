@@ -1,7 +1,5 @@
 import 'regenerator-runtime/runtime';
 
-import AppManifest from 'platform-editor-sdk/js/manifest';
-
 export default class EditorApp {
   init(editorSDK, appDefinitionId) {
     this.editorSDK = editorSDK;
